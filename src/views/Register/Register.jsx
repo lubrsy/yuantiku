@@ -72,30 +72,18 @@ function Register(props) {
       .then(res => {
         if (res.errCode === 0) {
           // 成功
-          showHideAlert(props, {
-            showAlert: true,
-            alertType: 'success',
-            alertContent: '注册成功，即将返回登录页'
-          });
+          showHideAlert(props, 'success', '注册成功，即将返回登录页');
           // 2秒后跳转到首页
           setTimeout(() => {
             // 返回登录页
             navigate('/login');
           }, 2000);
         } else {
-          showHideAlert(props, {
-            showAlert: true,
-            alertType: 'error',
-            alertContent: res.message
-          });
+          showHideAlert(props, 'error', res.message);
         }
       })
       .catch(err => {
-        showHideAlert(props, {
-          showAlert: true,
-          alertType: 'error',
-          alertContent: err.response.data.message
-        });
+        showHideAlert(props, 'error', err.response.data.message);
       });
   }
 

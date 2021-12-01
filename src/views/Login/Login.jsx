@@ -71,11 +71,7 @@ function Login(props) {
     }).then(res => {
       if (res.errCode === 0) {
         // 成功的提示
-        showHideAlert(props, {
-          showAlert: true,
-          alertType: 'success',
-          alertContent: '登录成功，即将返回首页'
-        });
+        showHideAlert(props, 'success', '登录成功，即将返回首页');
         let token = res.data;
         // 存入token
         localStorage.setItem('x-auth-token', token);
@@ -86,11 +82,7 @@ function Login(props) {
         }, 2000);
       } else {
         // 失败的提示
-        showHideAlert(props, {
-          showAlert: true,
-          alertType: 'error',
-          alertContent: res.message
-        });
+        showHideAlert(props, 'error', res.message);
       }
     });
   }

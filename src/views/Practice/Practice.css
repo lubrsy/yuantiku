@@ -1,0 +1,129 @@
+@import 'http://at.alicdn.com/t/font_2390471_jvvzeh530r.css';
+.Practice {
+  width: 100%;
+  min-height: 100vh;
+  background: #fff;
+  overflow: hidden;
+}
+.Practice .top {
+  padding: 0 50px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ccc;
+  height: 180px;
+  display: flex;
+  align-items: center;
+}
+.Practice .top .MuiSvgIcon-root {
+  width: 50px;
+  height: 50px;
+  margin-right: 14px;
+}
+.Practice .top .top_index b {
+  font-weight: bold;
+  color: #2e57ff;
+}
+.Practice .question {
+  position: relative;
+  left: 0;
+  top: 0;
+  transition: left 0.5s linear;
+}
+.Practice .question .question_li {
+  float: left;
+  width: 100vw;
+  padding: 60px 50px 0;
+  box-sizing: border-box;
+  border-bottom: 0;
+}
+.Practice .question_title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+.Practice .question_title span {
+  width: 80px;
+  height: 50px;
+  background: #2e57ff;
+  font-size: 32px;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  margin-right: 20px;
+}
+.Practice .question_title p {
+  flex: 1;
+  font-size: 42px;
+  color: #333;
+  line-height: 56px;
+}
+.Practice .question_textarea {
+  width: 100%;
+  height: 600px;
+  padding: 68px 71px;
+  box-sizing: border-box;
+  display: block;
+  margin-bottom: 39px;
+  background: #f0f0f0;
+}
+.Practice .question_textarea::-webkit-input-placeholder {
+  font-size: 38px;
+  color: #999;
+}
+.Practice .question_options li {
+  width: 1025px;
+  background: #f0f0f0;
+  padding: 50px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.Practice .question_options li .iconfont {
+  padding-top: 10px;
+}
+.Practice .question_options li .iconfont.icon-normal {
+  color: #333;
+}
+.Practice .question_options li .iconfont.icon-danxuanxiangxuanzhong {
+  color: #2e57ff;
+}
+.Practice .question_options li span {
+  flex: 1;
+  margin-left: 36px;
+}
+.Practice .question_tips {
+  font-size: 30px;
+  color: #999;
+  margin-bottom: 60px;
+}
+.Practice .question_submit {
+  width: 250px;
+  height: 96px;
+  background: #fff;
+  border: 2px solid #2e57ff;
+  font-size: 40px;
+  color: #2e57ff;
+  border-radius: 8px;
+  text-align: center;
+  line-height: 96px;
+  margin-bottom: 69px;
+}
+.Practice .question_answer {
+  display: flex;
+  margin-bottom: 69px;
+  justify-content: space-between;
+}
+.Practice .question_answer span {
+  font-size: 42px;
+  color: #333;
+  margin-right: 40px;
+  width: 14%;
+}
+.Practice .question_answer p {
+  flex: 1;
+  color: #2e57ff;
+  line-height: 50px;
+}
+.Practice .question_analysis p {
+  color: #333;
+}

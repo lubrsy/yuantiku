@@ -9,6 +9,8 @@ import Fast from '@/views/Fast/Fast';
 import User from '@/views/User/User';
 import Login from '@/views/Login/Login';
 import Register from '@/views/Register/Register';
+import Choose from '@/views/Choose/Choose';
+import Practice from '@/views/Practice/Practice';
 
 const BaseRouter = () => {
   return (
@@ -33,12 +35,21 @@ const BaseRouter = () => {
           component={() => ( */}
         {/* <App> */}
         {/* <Routes> */}
-        <Route exact path="/" element={<App />} />
+        {/* <Route exact path="/" element={<App />} />
         <Route exact path="/home" element={<Home />} />
         <Route exact path="/fast" element={<Fast />} />
         <Route exact path="/user" element={<User />} />
         <Route exact path="/login" element={<Login />} />
-        <Route exact path="/register" element={<Register />} />
+        <Route exact path="/register" element={<Register />} /> */}
+        <Route path="/" element={<App />}>
+          <Route path="/home" element={<Home />} />
+          <Route path="/fast" element={<Fast />} />
+          <Route path="/user" element={<User />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/choose/:code" element={<Choose />} />
+          <Route path="/practice" element={<Practice />} />
+        </Route>
         {/* </Routes> */}
         {/* </App> */}
         {/* )}

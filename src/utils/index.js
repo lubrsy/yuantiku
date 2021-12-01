@@ -17,21 +17,21 @@ export const alertMapDispatchToProps = dispatch => {
   };
 };
 
-export const showHideAlert = (props, obj) => {
-  props.showAlertFn(obj);
-  setTimeout(() => {
-    props.hideAlertFn();
-  }, 2000);
-};
-
-// 简洁版
-// export const showHideAlert = (props, alertType, alertContent) => {
-//   props.showAlertFn({
-//     showAlert: true,
-//     alertType: alertType,
-//     alertContent: alertContent
-//   });
+// export const showHideAlert = (props, obj) => {
+//   props.showAlertFn(obj);
 //   setTimeout(() => {
 //     props.hideAlertFn();
 //   }, 2000);
 // };
+
+// 简洁版
+export const showHideAlert = (props, alertType, alertContent) => {
+  props.showAlertFn({
+    showAlert: true,
+    alertType: alertType,
+    alertContent: alertContent
+  });
+  setTimeout(() => {
+    props.hideAlertFn();
+  }, 2000);
+};
